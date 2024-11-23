@@ -22,7 +22,6 @@ h1{
     margin: 30px 20px;
 }
 h3{
-    font-size: 17px;
 }
 p{
     font-size: 9px;
@@ -82,8 +81,8 @@ i:hover{
 .card{
     display: inline-block;
     overflow: hidden;
-    width: 15rem;
-    height: 25rem;
+    width: 20rem;
+    height: 30rem;
     margin:2rem 1rem;
     border-radius: 10px;
     background-color: #FBE6EF;
