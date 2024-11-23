@@ -22,9 +22,10 @@ h1{
     margin: 30px 20px;
 }
 h3{
+    font-size: 20px;
 }
 p{
-    font-size: 9px;
+    /* font-size: 9px; */
     text-align: justify;
 }
 a{
@@ -111,7 +112,7 @@ i:hover{
     padding: 4px;
 }
 .card__main__especie{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     display: inline;
     background-color: #ff167b3f;
