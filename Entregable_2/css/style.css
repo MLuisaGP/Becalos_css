@@ -22,14 +22,14 @@ h1{
     margin: 30px 20px;
 }
 h3{
-    font-size: 20px;
+    font-size: 23px;
 }
 p{
-    /* font-size: 9px; */
+    font-size: 12px;
     text-align: justify;
 }
 a{
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     color: rgb(42, 42, 42);
     font-weight: bolder;
@@ -112,7 +112,7 @@ i:hover{
     padding: 4px;
 }
 .card__main__especie{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     display: inline;
     background-color: #ff167b3f;
