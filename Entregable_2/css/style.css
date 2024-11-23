@@ -69,7 +69,6 @@ i:hover{
 }
 .header__nav--link.actual,.header__nav--auth{
     color: #ff167b;
-    font-size: 18px;
 }
 .header__nav--auth{
     background-color: #fff;
