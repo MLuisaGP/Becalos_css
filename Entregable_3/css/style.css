@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*
+#ff167b rosa fuerte
+#f15b9c;
+#ec7777
+#FBE6EF
+*/
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    min-height: 100%;
+}
+h1,h2,h3{
+    color:#ff167b;
+}
+h1{
+    text-align: center;
+    margin: 1.8rem 1.3rem;
+    
+}
+h3{
+    font-size: 1.4rem;
+}
+p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(42, 42, 42);
+    font-weight: bolder;
+    transition: 120ms;
+    cursor: pointer;
+}
+a:hover{
+    color: #ff167b;
+    font-size: 0.9rem;
+}
+i:hover{
+    border: none;
+}
+
+
+.header{
+    background-color: #FBE6EF;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+.header > *{
+    display: inline-block;
+}
+.header__logo{
+    padding-top: 1rem;
+    width: 15em;
+}
+
+.header__nav{
+    width: 100%;
+    text-align: end;
+    padding: .8rem;
+}
+.header__nav--link{
+    padding: inherit;
+}
+.header__nav--link:hover{
+    border-bottom: solid #ff167b 3px;
+}
+.header__nav--link.actual,.header__nav--auth{
+    color: #ff167b;
+}
+.header__nav--auth{
+    background-color: #fff;
+    border-radius: 100vw;
+    padding: 2px 5px;
+}
+.cards{
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    overflow: hidden;
+    width: 20rem;
+    height: 30rem;
+    margin:2rem 1rem;
+    border-radius: 10px;
+    background-color: #FBE6EF;
+    transition: 300ms;
+}
+.card:hover{
+    transform: scale(1.1);
+    border: solid #ff167b 1px;
+}
+.card__img{
+    height: 50%;
+    overflow: hidden;
+    
+}
+.card__main{
+    height: 100%;
+    text-align: left;
+    margin: 1rem;
+}
+.card__main > *{
+    padding: 4px;
+}
+.card__main__especie{
+    font-weight: 300;
+    display: inline;
+    background-color: #ff167b3f;
+    padding: 3px 5px;
+    border-radius: 100vw;
+}
+.card__main__presentacion{
+    height: 22%;
+}
+.card__btn{
+    margin-top: 3px;
+    text-align: end;
+}
+
+.card__btn .btn{
+    background-color: #FBE6EF;
+    color: #ff167b;
+    padding: 2px 5px;
+    border-radius: 100vw;
+    transition: 400ms;
+}
+.card__btn .btn i{
+    display: none;
+    transition: 400ms;
+}
+.card__btn .btn:hover {
+    background-color: #ff167b;
+    color: #FBE6EF;
+    border: solid #ff167b 1px;
+}
+.card__btn .btn:hover i {
+    display: inline;
+}
+footer{
+    background-color: #f58dba;
+    text-align: center;
+    padding: 5px 0;
+}
+footer a:hover{
+    color: #fff;
+}
