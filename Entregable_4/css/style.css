@@ -46,7 +46,19 @@ a:hover{
 i:hover{
     border: none;
 }
-
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    /* border-color: #ff167b; */
+    border: #ff167b6d solid 1px;
+}
 /*HEADER*/
 .header{
     background-color: #db6f9d;
@@ -186,8 +198,10 @@ i:hover{
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
-    margin: 1rem;
+    /* margin: 1rem; */
+    width: 100%;
     height: 100%;
+    padding: 1.1rem;
 }
 .card__main h3{
     font-size: 1em;
@@ -208,72 +222,48 @@ i:hover{
     cursor:default;
     font-weight: 300;
 }
-
-
-/* .card__img img{
-    max-width:  100%;
-    border-radius: 2px;
-} */
-
-
-    /* font-size: .2em; */
-    /* overflow: hidden;
-    width: 20rem;
-    height: 30rem;
-    margin:2rem 1rem;
-    */
-/* }
-.card:hover{
-    transform: scale(1.1);
-    border: solid #ff167b 1px;
-}
-.card__img{
-    height: 50%;
-    overflow: hidden;
-
-}
-.card__main{
-    height: 100%;
-    text-align: left;
-    margin: 1rem;
-}
-.card__main > *{
-    padding: 4px;
-}
-.card__main__especie{
-    font-weight: 300;
-    display: inline;
-    background-color: #ff167b3f;
-    padding: 3px 5px;
-    border-radius: 100vw;
-}
 .card__main__presentacion{
-    height: 22%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
 }
-.card__btn{
+.card__main__caracteristicas{
+    display: flex;
+    font-size: .7em;
+    justify-content: space-between;
+}
+
+.card__btn {
     margin-top: 3px;
     text-align: end;
 }
 
-.card__btn .btn{
+.card__btn .btn {
     background-color: #FBE6EF;
     color: #ff167b;
     padding: 2px 5px;
     border-radius: 100vw;
     transition: 400ms;
 }
-.card__btn .btn i{
-    display: none;
+
+.card__btn .btn i {
+    color: #ff167b00;
     transition: 400ms;
 }
+
 .card__btn .btn:hover {
     background-color: #ff167b;
     color: #FBE6EF;
     border: solid #ff167b 1px;
 }
+
 .card__btn .btn:hover i {
     display: inline;
-} */
+    color: #FBE6EF;
+}
 footer{
     background-color: #f58dba;
     text-align: center;
