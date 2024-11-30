@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
 }
 img{
     width: 100%;
@@ -31,7 +32,7 @@ p{
     text-align: justify;
 }
 a{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     text-decoration: none;
     color: rgb(42, 42, 42);
     font-weight: bolder;
@@ -40,7 +41,7 @@ a{
 }
 a:hover{
     color: #ff167b;
-    font-size: 0.9rem;
+    font-size: 0.65rem;
 }
 i:hover{
     border: none;
@@ -51,31 +52,36 @@ i:hover{
     background-color: #db6f9d;
     display: flex;
     align-items: center;
-    padding: 0rem 1rem;
+    padding: 0.5rem;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 15vh;
     overflow: hidden;
 }
 
 .header__logo{
     flex-grow: none;
-    width: 15em;
+    width: 10em;
 }
 
 .header__nav{
-    width: 100%;
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    /* width: 100%; */
     padding: .8rem;
+    gap: 1rem;
+    /* background-color: #FBE6EF; */
+    align-items: center;
+    justify-items: center;
 }
 .header__nav--link{
-    padding: inherit;
     transition: 300ms;
     border-bottom: solid #ff167b00 3px;
+    font-size: 0.7rem;
 }
 .header__nav--link.actual, .header__nav--link:hover{
+    font-size: 0.75rem;
     color: #FBE6EF;
 }
 .header__nav--link:hover{
@@ -87,6 +93,10 @@ i:hover{
     background-color: #FBE6EF;
     border-radius: 100vw;
     padding: 2px 5px;
+}
+.header__nav--auth:hover{
+    color: #FBE6EF;
+    background-color: #ff167b;
 }
 /*TITLE*/
 
@@ -185,7 +195,9 @@ i:hover{
     font-size: 10px;
     padding: .2rem .4rem;
     border-radius: 100vh;
+    cursor:default;
 }
+
 /* .card__img img{
     max-width:  100%;
     border-radius: 2px;
