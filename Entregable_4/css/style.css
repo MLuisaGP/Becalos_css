@@ -21,7 +21,7 @@ h1,h2,h3{
 h1{
     text-align: center;
     margin: 1.8rem 1.3rem;
-    
+
 }
 h3{
     font-size: 1.4rem;
@@ -141,18 +141,64 @@ i:hover{
 
 /*CARDS*/
 .cards{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 .card{
-    display: inline-block;
+    display: flex ;
+    flex-direction: column;
+    height: 25rem;
+    width: 15rem;
+    background-color: #FBE6EF;
     overflow: hidden;
+    border-radius: 5px;
+    transition: 300ms;
+    align-items: center;
+}
+.card:hover {
+    transform: scale(1.1);
+    border: solid #ff167b 1px;
+}
+.card__img{
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.card__main {
+    /* background-color: #f58dba; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin: 1rem;
+    height: 100%;
+}
+.card__main__especie {
+    display: flex;
+}
+.card__main__especie p{
+    background-color: #ff167b3f;
+    font-size: 10px;
+    padding: .2rem .4rem;
+    border-radius: 100vh;
+}
+/* .card__img img{
+    max-width:  100%;
+    border-radius: 2px;
+} */
+
+
+    /* font-size: .2em; */
+    /* overflow: hidden;
     width: 20rem;
     height: 30rem;
     margin:2rem 1rem;
-    border-radius: 10px;
-    background-color: #FBE6EF;
-    transition: 300ms;
-}
+    */
+/* }
 .card:hover{
     transform: scale(1.1);
     border: solid #ff167b 1px;
@@ -160,7 +206,7 @@ i:hover{
 .card__img{
     height: 50%;
     overflow: hidden;
-    
+
 }
 .card__main{
     height: 100%;
@@ -203,7 +249,7 @@ i:hover{
 }
 .card__btn .btn:hover i {
     display: inline;
-}
+} */
 footer{
     background-color: #f58dba;
     text-align: center;
