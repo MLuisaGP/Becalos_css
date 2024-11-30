@@ -31,13 +31,15 @@ p{
     font-size: 0.8rem;
     text-align: justify;
 }
+a, button{
+    cursor: pointer;
+}
 a{
     font-size: 0.6rem;
     text-decoration: none;
     color: rgb(42, 42, 42);
     font-weight: bolder;
     transition: 120ms;
-    cursor: pointer;
 }
 a:hover{
     color: #ff167b;
@@ -232,7 +234,7 @@ hr{
 }
 .card__main__caracteristicas{
     display: flex;
-    font-size: .7em;
+    font-size: .6em;
     justify-content: space-between;
 }
 
@@ -241,29 +243,21 @@ hr{
     text-align: end;
 }
 
-.card__btn .btn {
-    background-color: #FBE6EF;
-    color: #ff167b;
+.card__btn .btn, .btn-flotante{
+    background-color: #ff167b;
+        color: #FBE6EF;
+        border: solid #ff167b 1px;
     padding: 2px 5px;
     border-radius: 100vw;
     transition: 400ms;
 }
 
-.card__btn .btn i {
-    color: #ff167b00;
-    transition: 400ms;
+.card__btn .btn:hover, .btn-flotante:hover {
+    background-color: #FBE6EF;
+    color: #ff167b;
+    border: #ff167b solid 1px;
 }
 
-.card__btn .btn:hover {
-    background-color: #ff167b;
-    color: #FBE6EF;
-    border: solid #ff167b 1px;
-}
-
-.card__btn .btn:hover i {
-    display: inline;
-    color: #FBE6EF;
-}
 footer{
     background-color: #f58dba;
     text-align: center;
@@ -271,4 +265,12 @@ footer{
 }
 footer a:hover{
     color: #fff;
+}
+
+.btn-flotante{
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
 }
