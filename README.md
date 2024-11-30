@@ -8,6 +8,7 @@ Los entregables son los sigientes
 
 2. Entregable 2: Se toma el proyecto del modulo anterior de Pawmex y se corrigue diseño de la pagina de adoptar, aplicando los conceptos aprendidos en la lesion 2 del modulo fundamentos del desarrollo web.
 3. Entregable 3: Se toma el proyecto anterior y se reduce el codigo css utilizando herencias.
+4. Entregable 4: Se toma el proyecto anterior y se mejora diseño dando uso de flexbox y posiciones fixed y sticky.
 
 
 ## Autor
