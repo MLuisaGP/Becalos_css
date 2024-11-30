@@ -46,18 +46,22 @@ i:hover{
     border: none;
 }
 
-
+/*HEADER*/
 .header{
-    background-color: #FBE6EF;
+    background-color: #db6f9d;
     display: flex;
     align-items: center;
     padding: 0rem 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 15vh;
+    overflow: hidden;
 }
-.header > *{
-    display: inline-block;
-}
+
 .header__logo{
-    padding-top: 1rem;
+    flex-grow: none;
     width: 15em;
 }
 
@@ -68,18 +72,74 @@ i:hover{
 }
 .header__nav--link{
     padding: inherit;
+    transition: 300ms;
+    border-bottom: solid #ff167b00 3px;
+}
+.header__nav--link.actual, .header__nav--link:hover{
+    color: #FBE6EF;
 }
 .header__nav--link:hover{
     border-bottom: solid #ff167b 3px;
 }
-.header__nav--link.actual,.header__nav--auth{
-    color: #ff167b;
-}
+
 .header__nav--auth{
-    background-color: #fff;
+    color: #ff167b;
+    background-color: #FBE6EF;
     border-radius: 100vw;
     padding: 2px 5px;
 }
+/*TITLE*/
+
+.title{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(../assets/bg-adopcion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.busqueda {
+    width: 35%;
+    display: flex;
+    align-content: stretch;
+    gap: 2px;
+}
+
+.busqueda input {
+    border-radius: 100vw 0 0 100vw;
+    width: 80%;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+.busqueda input:focus {
+    width: 80%;
+    outline: none;
+}
+
+.busqueda input[type=submit] {
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 100vw 100vw 0;
+    font-size: 12px;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    background-color: #FBE6EF;
+    color: #ff167b;
+    transition: 250ms;
+}
+.busqueda input[type=submit]:hover {
+    background-color: #ff167b;
+    color: #FBE6EF;
+}
+
+/*Section*/
+.section{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*CARDS*/
 .cards{
     text-align: center;
 }
