@@ -198,10 +198,7 @@ footer .logos-ul img:hover {
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    -webkit-box-shadow: 15px 16px 0px -10px #FADA7A;
-    -moz-box-shadow: 15px 16px 0px -10px #FADA7A;
-    box-shadow: 15px 16px 0px -10px #FADA7A;
-    transition: 150rem;
+    transition: 250ms;
 }
 .gender-card h1{
     font-size: 1.2rem;
@@ -209,6 +206,9 @@ footer .logos-ul img:hover {
 .gender-card:hover {
     background-color: #457a3ca4;
     transform: translateX(-15px);
+        -webkit-box-shadow: 15px 16px 0px -10px #FADA7A;
+            -moz-box-shadow: 15px 16px 0px -10px #FADA7A;
+            box-shadow: 15px 16px 0px -10px #FADA7A;
 }
 .info-gender-card{
     display: flex;

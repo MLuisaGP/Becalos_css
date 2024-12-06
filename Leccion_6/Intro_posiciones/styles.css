@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header, footer{
+    width: 100%;
+    z-index: 100;
+}
+/*Nav*/
+/* CSS: Navbar Distribuida */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+    /* Elementos en los extremos con espacio entre ellos */
+
+    align-items: center;
+    /* Alinear los elementos verticalmente */
+
+    padding: 10px 20px;
+
+    background-color: #333;
+
+    color: white;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 15px;
+    /* Espacio entre los enlaces */
+
+}
+
+.login-button {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+}
+/* CSS: Alineación Compleja de la Card */
+
+.container {
+
+    display: flex;
+
+    justify-content: center;
+    /* Centrar horizontalmente */
+
+    align-items: center;
+    /* Centrar verticalmente */
+
+    height: 100vh;
+    /* Hacer que ocupe toda la altura de la pantalla */
+
+    background-color: #f4f4f4;
+
+}
+
+.card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+/*Boxs*/
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.box{
+    background-color: cornflowerblue;
+    width: 10rem;
+    height: 10rem;
+}
+.box:nth-child(2){
+    background-color: rgba(220, 20, 60, 0.312);
+    color:#fff;
+    position: sticky;
+    top: 10px;
+    /* z-index: -1; */
+}
+
+/*Footer*/
+.cookie-footer {
+
+    position: fixed;
+    /* Siempre visible al final de la pantalla */
+
+    bottom: 0;
+    /* Pegado a la parte inferior */
+
+    left: 0;
+
+    right: 0;
+
+    background-color: #222;
+    /* Fondo oscuro para que destaque */
+
+    color: #fff;
+    /* Texto en blanco para buen contraste */
+
+    padding: 1em;
+
+    display: flex;
+    /* Organiza el contenido de manera horizontal */
+
+    justify-content: space-between;
+    /* Espacia el texto y el botón */
+
+    align-items: center;
+
+}
+
+.cookie-footer button {
+
+    background-color: #4caf50;
+    /* Verde para el botón */
+
+    color: white;
+
+    border: none;
+
+    padding: 0.5em 1em;
+
+    cursor: pointer;
+
+}
+
+.cookie-footer button:hover {
+
+    background-color: #45a049;
+    /* Efecto al pasar el ratón sobre el botón */
+
+}
+
+/* CSS: Card Horizontal con Flexbox */
+
+.card-horizontal {
+
+  display: flex;
+
+  align-items: center; /* Alinear elementos verticalmente */
+
+  gap: 20px; /* Espacio entre la imagen y la descripción */
+
+  padding: 20px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+
+}
+
+.card-image {
+
+  width: 150px;
+
+  height: auto;
+
+  border-radius: 8px;
+
+}
+
+.card-description {
+
+  flex: 1; /* Hacer que la descripción ocupe el espacio disponible */
+
+}
+
+/* Diseño adaptable */
+
+@media (max-width: 600px) {
+
+  .card-horizontal {
+
+    flex-direction: column; /* Apila la imagen y la descripción en pantallas pequeñas */
+
+    align-items: flex-start; /* Alinear a la izquierda en modo columna */
+
+  }
+
+}
+
+
+.modal {
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    z-index: 2000;
+    /* Alto valor para estar encima de todo */
+}
+
+.sticky-note {
+
+    position: static;
+
+    top: 20px;
+
+    background-color: yellow;
+
+    padding: 10px;
+
+    z-index: 500;
+    /* Se asegura de estar por encima del contenido principal */
+
+}
