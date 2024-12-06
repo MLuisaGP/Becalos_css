@@ -25,21 +25,42 @@
             <a href="#" class="header__nav--link">Contacto</a>
         </nav>
         <div class="auth">
-            <a href="#" class="header__nav--link header__nav--auth">Log in</a>
-
+            <a href="#" class="header__nav--link header__nav--auth btn">Log in</a>
         </div>
     </header>
     <div class="title">
-        <!-- <h1>Adopciones</h1> -->
-        <form class="busqueda" action="">
-            <input type="text" placeholder="Buscar">
-            <input type="submit" value="Buscar">
-        </form>
+        <h1 class="title-h1">Adopciones</h1>
     </div>
     <main>
+        <section class=" choose-section">
+            <h1>¿Que deseas adoptar?</h1>
+            <form class="busqueda" action="">
+                <input type="text" placeholder="Buscar">
+                <input type="submit" value="Buscar">
+            </form>
+            <div class="choose-container">
+                <div class="choose">
+                    <div class="choose-img">
+                        <img src="assets/Iconos/gato.png" alt="escoger-gato">
+                    </div>
+                    <div class="choose-inf"> Gatos</div>
+                </div>
+                <div class="choose">
+                    <div class="choose-img">
+                        <img src="assets/Iconos/perro.png" alt="escoger-perro">
+                    </div>
+                    <div class="choose-inf">Perros </div>
+                </div>
+            </div>
+
+        </section>
+
         <section class="section">
+            <h1>En Adopcion | <span class="resaltado">Todos</span></h1>
             <div class="cards">
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
+                    <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/perros/pancho.png" alt="perro-pancho" />
                     </div>
@@ -68,6 +89,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/perros/dante.jpg" alt="perro-dante" />
                     </div>
@@ -97,6 +119,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/perros/milo.jpg" alt="perro-milo" />
                     </div>
@@ -125,6 +148,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/perros/nala.webp" alt="perro-nala" />
                     </div>
@@ -154,6 +178,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/perros/Adopta.jpg" alt="perro-Max" />
                     </div>
@@ -184,6 +209,7 @@
                 </div>
                 <!--GATOS-->
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/gatos/Coffee.jpg" alt="gatito-coffee" />
                     </div>
@@ -213,6 +239,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/gatos/Pelusa.jpg" alt="gatito-pelusa" />
                     </div>
@@ -242,6 +269,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/gatos/Pinto.jpg" alt="gatito-pinto" />
                     </div>
@@ -271,6 +299,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/gatos/Tiger.jpg" alt="gatito-tigger" />
                     </div>
@@ -299,6 +328,7 @@
                     </div>
                 </div>
                 <div class="card ">
+                     <div class="icono-fav"><i class="fa-solid fa-bookmark"></i></div>
                     <div class="card__img">
                         <img class="img" src="assets/gatos/6c94ec_59481a7654374fd99965d53bdbbc213e~mv2.avif" alt="gatito-Wiskas" />
                     </div>
@@ -327,21 +357,42 @@
                     </div>
                 </div>
             </div>
+            <div class="paginado">
+                <ul>
+                    <li class="actual">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                    <li>10</li>
+                    <li>&#187</li>
+                </ul>
+            </div>
         </section>
     </main>
     <section>
+        <button class="btn-flotante btn">Llenar Fomulario</button>
         
     </section>
-    <button class="btn-flotante">Llenar Fomulario</button>
     <footer>
-        <div class="footter__copyrights">
+        <div class="footer-container">
+            <div class="footer__logo">
+                <a href="index.html"><img class="footer__logo--img" src="assets/logo/logo-transparente-largo.png" alt="logo-pawmex" /></a>
+            </div>
+            <ul class="links-ul">
+                <a href=""><li>Ayuda</li></a>
+                <a href=""><li>Terminos y condiciones</li></a>
+                <a href=""><li>Sobre nosotros</li></a>
+                <a href=""><li>Aviso de privacidad</li></a>
+            </ul>
+            <div class="footer__redes">
+                <a href="https://github.com/MLuisaGP" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/mc-maria-luisa-galaz-palma-9ab30a19a" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer__copyrights">
             <a href="https://github.com/MLuisaGP" target="_blank"><i class="fa-regular fa-copyright"></i> Luisa Galaz
                 2024</a>
-        </div>
-        <div class="footter__redes">
-            <a href="https://github.com/MLuisaGP" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/mc-maria-luisa-galaz-palma-9ab30a19a" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 </body>
