@@ -325,18 +325,13 @@ hr{
     cursor:default;
     font-weight: 300;
 }
-.card__main__presentacion{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    gap: 1rem;
-}
+
 .card__main__caracteristicas{
-    display: flex;
-    font-size: .6em;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: 10px;
+    gap: 1rem;
 }
 
 .card__btn {
