@@ -66,18 +66,22 @@ hr{
 }
 .btn {
     background-color: #ff167b;
-        color: #f4f4f4;
-        border: solid #ff167b 1px;
-        padding: 2px 10px;
-        border-radius: 100vw;
-        font-size: 0.9rem;
-        transition: 400ms;
+    color: #f4f4f4;
+    border: solid #ff167b 1px;
+    padding: 2px 10px;
+    border-radius: 100vw;
+    font-size: 0.9rem;
+    transition: 400ms;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #ff167b00;
     color: #ff167b;
     border: solid #ff167b 1px;
     font-size: 0.9rem;
+}
+.btn:hover a{
+    color: #ff167b;
 }
 /*HEADER*/
 .header{
@@ -428,3 +432,33 @@ footer .links-ul{
 
 
 /** HOME **/
+.slider{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.slider--img{
+    max-width: 50rem;
+}
+.slider--img img{
+    width: 100%;
+}
+
+.slider--texto {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.slider--texto > *{
+    padding: 0;
+    margin: 0;
+}
+.slider--texto p{
+    font-size: 15px;
+}
+.slider--texto .btn{
+    cursor: pointer;
+    padding:.5rem 1rem;
+}
