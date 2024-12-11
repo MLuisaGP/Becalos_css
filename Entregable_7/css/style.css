@@ -198,9 +198,7 @@ hr{
     margin: 1rem ;
     padding: 3rem 3rem 5rem 3rem;
     gap: 3rem;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.28);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.28);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.28);
+
     align-items: center;
     justify-content: center;
 }
