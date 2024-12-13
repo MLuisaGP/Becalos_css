@@ -110,22 +110,24 @@ hr{
     border: none;
     padding:.5rem;
     border-radius: 10px;
-    background-color: #f58dba;
+    background-color: #eaeaea;
     transition: 250ms;
 }
 .btn-burger i{
     cursor: pointer;
-    color: #242323;
+    color: #ff167b;
     font-size: 1.5rem;
     font-weight: 900;
     transition: 250ms;
+    
 }
 .btn-burger:hover i {
     color: #eaeaea;
     
 }
 .btn-burger:hover {
-    background-color: #f58dba33;
+    transform: scale(1.1);
+    background-color: #ff167b;
     border-radius: 10px;
     
 }
@@ -182,34 +184,14 @@ hr{
     padding: 0.5rem 1rem;
     background-color: #ff167b;
     color: #f4f4f4;
-
     transition: 250ms;
 }
 .busqueda input[type=submit]:hover {
-    background-color: #997C70;
-    color: #f4f4f4;
+    background-color: #fff;
+    color: #ff167b;
 }
 
-@media only screen and (min-width: 1200px) {
-    .busqueda {
-        width: 50%;
-        flex-direction: row;
-        gap: 2px;
-        align-items: stretch;
-        justify-content: center;
-    }
 
-    .busqueda input {
-        border-radius: 100vw 0 0 100vw;
-        width: 80%;
-    }
-
-    .busqueda input[type=submit] {
-        border-radius: 0 100vw 100vw 0;
-        font-size: 12px;
-        width: 10rem;
-    }
-}
 
 /*Section*/
 .section{
@@ -419,6 +401,7 @@ footer{
     background-color: #f58dba;
     text-align: center;
     padding: 5px 0;
+        padding: 1rem;
 }
 footer a:hover{
     color: #f4f4f4;
@@ -426,21 +409,27 @@ footer a:hover{
 .footer-container{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 .footer__logo{
-    height: 3rem;
+    width: 15rem;
 }
 .footer__logo img{
     height: 100%;
 }
 
 footer .links-ul{
+    width: 100%;
     flex-grow: 0.5;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    font-size: 1rem;
 }
+
 .links-ul li{
     cursor: pointer;
 }
@@ -448,8 +437,9 @@ footer .links-ul{
     cursor: pointer;
 }
 .links-ul a{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
+
 .footer__redes{
     display: flex;
     gap: 2rem;
@@ -512,7 +502,6 @@ footer .links-ul{
 
     .busqueda input[type=submit] {
         border-radius: 0 100vw 100vw 0;
-        font-size: 12px;
         width: 10rem;
     }
     .paginado li,.paginado i{
@@ -559,6 +548,11 @@ footer .links-ul{
     }
     .choose-container {
         max-width: 10rem;
+    }
+    footer .links-ul {
+        flex-grow: 0.5;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -617,21 +611,19 @@ footer .links-ul{
     .card:last-child{
         display: none;
     }
-
-}
-
-@media only screen and (min-width: 1200px) {
-    .header__nav--link {
-        font-size: 1rem;
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    .header__nav--link.actual,
-    .header__nav--link:hover {
-        font-size: 1.05rem;
+    footer .links-ul {
+        flex-grow: 0.5;
+        display: flex;
+        justify-content: space-around;
     }
-    .card{
-        height: 30rem;
-        width: 19rem;
-        font-size: 1.2rem;
+
+    .links-ul a {
+        font-size: 0.8rem;
     }
+
 }
