@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-img-container">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="Buscar">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Carreras</li>
+            <li>Ayuda</li>
+        </ul>
+    </header>
+    <div class="ventajas">
+        <div class="big-card">
+            <h1>Cumple con tus objetivos</h1>
+            <div class="big-carg-img-container">
+                <img src="assets/objetivos.webp" alt="cumplir-objetivos">
+            </div>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="assets/beca.png" alt="becas">
+            </div>
+            <h3>Becas hasta el 70%</h3>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="assets/garantia.png" alt="garantia">
+            </div>
+            <h3>Garantia de trabajo.</h3>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="assets/247.jpg" alt="atencion-24-7">
+            </div>
+            <h3>Asesoramiento 24/7.</h3>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="assets/clases.png" alt="clases-vivo-y-grabadas">
+            </div>
+            <h3>Clases en vivo y grabadas.</h3>
+        </div>
+    </div>
+    <main>
+        <h1>Carreras</h1>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/abogado.jpg" alt="abogado">
+                </div>
+                <div class="card-info">
+                    <h1>Licenciatura en derechos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/doctor.jpg" alt="Medicina">
+                </div>
+                <div class="card-info">
+                    <h1>Medicina</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/enfermeria.jpeg" alt="enfermeria">
+                </div>
+                <div class="card-info">
+                    <h1>Enfermeria</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/ing-biomedica.jpg" alt="ingenieria-biomedica">
+                </div>
+                <div class="card-info">
+                    <h1>Ingeniero biomedico</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/ing-electrica.jpg" alt="ingenieria-electrica">
+                </div>
+                <div class="card-info">
+                    <h1>Ingeniero Electrico</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/ing-robotica.jpg" alt="ingenieria-electronica">
+                </div>
+                <div class="card-info">
+                    <h1>Ingenieria Electronica</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/ing-software.jpg" alt="ingenieria-software">
+                </div>
+                <div class="card-info">
+                    <h1>Ingenieria en Software</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="assets/carreras/psicologia.jpg" alt="psicologia">
+                </div>
+                <div class="card-info">
+                    <h1>Licenciatura en psicologia</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. T</p>
+                </div>
+                <button>Mostrar más</button>
+            </div>
+        </div>
+    </main>
+    <!-- <div class="gender-container">
+        <h1>Noticias</h1>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Becas Disponibles</h1>
+                <div class="icon-gender-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/0/472.png" alt="icono-noticias">
+                </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="assets/noticias/becas.webp" alt="becas">
+            </div>
+        </div>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Convocatorias</h1>
+                <div class="icon-gender-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/0/472.png" alt="iconos-noticias">
+                </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="assets/noticias/reunion.jpg" alt="convocatorias">
+            </div>
+        </div>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Graduacion 2024</h1>
+                <div class="icon-gender-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/0/472.png" alt="iconos-noticias">
+                </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="assets/noticias/graduacion.jpg" alt="graduaciones">
+            </div>
+        </div>
+    </div> -->
+    <!-- <footer>
+        <div class="footer-logo-container">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <ul class="links-ul">
+            <li>Ayuda</li>
+            <li>Terminos y condiciones</li>
+            <li>Sobre nosotros</li>
+            <li>Aviso de privacidad</li>
+        </ul>
+        <ul class="logos-ul">
+            <a href=""><li>
+                <img src="https://img.icons8.com/win10/512/linkedin.png" alt="">
+
+            </li>
+            </a>
+            <a href=""><li>
+                <img src="https://pngimg.com/d/github_PNG40.png" alt="">
+            </li>
+            
+            </a>
+        </ul>
+    </footer> -->
+
+</body>
+</html>
