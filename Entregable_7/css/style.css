@@ -395,10 +395,11 @@ hr{
 .paginado li,.paginado i{
     cursor: pointer;
     transition: 150ms;
+    font-size: 1.5rem;
 }
 .paginado li:hover {
     color: #ff167b;
-    font-size: 1.2rem;
+    transform: scale(1.1);
     border-bottom: solid 1px #ff167b;
 }
 /*BTN FLOTANTE*/
@@ -514,7 +515,9 @@ footer .links-ul{
         font-size: 12px;
         width: 10rem;
     }
-
+    .paginado li,.paginado i{
+        font-size: 1rem;
+    }
 
 }
 @media only screen and (min-width: 768px) {
