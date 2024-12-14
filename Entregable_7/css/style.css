@@ -469,11 +469,7 @@ footer .links-ul{
     justify-content: center;
     padding-top: 1rem;
 }
-@media only screen and (min-width: 768px) {
-    .slider {
-        flex-direction: row;
-    }
-}
+
 .slider--img{
     max-width: 50rem;
 }
@@ -639,5 +635,7 @@ footer .links-ul{
     .btn-flotante{
         bottom: 8rem;
     }
-
+    .slider {
+        flex-direction: row;
+    }
 }
