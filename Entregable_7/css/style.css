@@ -189,6 +189,7 @@ hr{
 .busqueda input[type=submit]:hover {
     background-color: #fff;
     color: #ff167b;
+    border: solid #ff167b 1px;
 }
 
 
@@ -549,23 +550,24 @@ footer .links-ul{
     display: none;
 }
 
-.ventajas-container {
+.grid-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.ventajas{
+.grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
     margin: 2rem;
     
+    
 }
-.ventajas h1,.ventajas h3{
+.grid h1,.grid h3{
     color: #FC8F54;
 }
-.ventajas > *{
+.grid > *{
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -574,6 +576,7 @@ footer .links-ul{
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 .big-card{
     grid-column: 1/3;
@@ -593,11 +596,11 @@ footer .links-ul{
     gap: 1rem;
     justify-content: center;
 }
-.ventajas h3{
+.grid h3{
     font-size: 1rem;
     /* color: #FC8F54; */
 }
-.servicios{
+.servicios, .proceso-adopcion{
     margin: 0;
     background-color: #6d6a6a0e;
 }
@@ -606,6 +609,106 @@ footer .links-ul{
 }
 .paginacion{
     display: none;
+}
+    .proceso-adopcion .small-card {
+        position: relative;
+        padding: 0;
+        transition: 250ms;
+    }
+
+    .small-card .overide {
+        position: absolute;
+        display: flex;
+        transition: 250ms;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: transparent;
+    }
+
+    .proceso-adopcion .small-card .overide p {
+        display: none;
+    }
+
+    .proceso-adopcion .small-card:hover {
+        transform: scale(1.1);
+    }
+
+    .proceso-adopcion .small-card:hover .overide {
+        background: rgb(126, 124, 125);
+        background: radial-gradient(circle, rgba(59, 48, 60, 0.7962962962962963) 0%, rgba(126, 124, 125, 0.7279202279202279)93%);
+    }
+
+    .proceso-adopcion .small-card:hover p {
+        display: inline;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+.small-card-container {
+    padding: 2rem;
+}
+
+/*Articulos*/
+.articulos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.articulo-card{
+    width: 90vw;
+    background-color: #fff;
+    transition: 250ms;
+    background-color: #db6f9d;
+    color: #fff;
+}
+.articulo-card h1{
+    color: #fff;
+
+}
+.articulo-card:hover{
+    translate: -1rem;
+    -webkit-box-shadow: 11px 12px 0px 0px #000;
+        -moz-box-shadow: 11px 12px 0px 0px #000;
+        box-shadow: 11px 12px 0px 0px #000;
+
+}
+.icon-articulos-container{
+    width: 2rem;
+    background-color: #db6f9d;
+}
+.articulo-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.articulo-card *{
+    cursor: pointer;
+}
+.image-articulos-container{
+    width: 30%;
+}
+.image-articulos-container img{
+    width: 100%;
+}
+.info-articulo-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+.info-articulo-card h1{
+    padding: 0;
+    margin: 0;
 }
 /*MEDIA QUERIS*/
 @media only screen and (min-width: 600px) {
@@ -696,12 +799,14 @@ footer .links-ul{
     .small-card h3 {
         font-size: 1.2rem;
     }
-    .ventajas{
+    .grid{
         width: 70vw;
     }
     .small-card-icon-container {
         width: 40%;
     }
+        .articulo-card {
+            width: 60vw;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -767,12 +872,12 @@ footer .links-ul{
     .btn-flotante{
         bottom: 8rem;
     }
-    .ventajas{
+    .grid{
         grid-template-columns: repeat(4,1fr);
         margin: 4rem 2rem;
         
     }
-    .ventajas {
+    .grid {
         width: 90vw;
     }
     .card--hidden{
@@ -782,11 +887,12 @@ footer .links-ul{
 @media only screen and (min-width: 1200px) {
 
     
-    .ventajas {
+    .grid {
         width: 70vw;
     }
     .small-card-icon-container {
         width: 35%;
     }
+
 
 }
